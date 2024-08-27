@@ -68,14 +68,17 @@ gsap.from(
   ".footer1 , .footer-logo  ",
 
   {
-    opacity: 0,
+    // opacity: 1,
     x: 200,
     stagger: 0.4,
+    start: "top 20% ",
+
     scrollTrigger: {
       trigger: "footer",
       scrub: 2,
-      pin: true,
+      // pin: true,
       // markers: true,
+      end: "=+200",
     },
   }
 );
