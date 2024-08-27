@@ -34,7 +34,7 @@ gsap.from(
       start: "top top",
 
       scrub: 1,
-      markers: true,
+      // markers: true,
     },
   },
   "section2"
