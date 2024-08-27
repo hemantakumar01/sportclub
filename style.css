@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Moderustic", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  /* background: #000; */
+}
+.section1 {
+  width: 100%;
+  /* height: 100%; */
+  background-image: linear-gradient(
+    to top,
+    #f36a8d,
+    #f6738e,
+    #f87c8f,
+    #fa8491,
+    #fc8d93
+  );
+}
+.main {
+  /* height: 100%; */
+  display: flex;
+  background-image: linear-gradient(
+    to top,
+    #f36a8d,
+    #f6738e,
+    #f87c8f,
+    #fa8491,
+    #fc8d93
+  );
+  height: 100%;
+}
+.main .left {
+  width: 50%;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  color: white;
+  gap: 20px;
+}
+.main .left h1 {
+  font-size: 4vw;
+  width: 350px;
+  margin: 0 auto;
+}
+.main .left p {
+  font-size: 1.5vw;
+  width: 340px;
+  margin: 0 auto;
+}
+.main .left button {
+  font-size: 1.5vw;
+  width: 340px;
+  margin: 0 auto;
+  padding: 10px 0;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+.main .right {
+  /* background-color: rgb(43, 43, 8); */
+  width: 50%;
+  height: 100%;
+}
+.main .right img {
+  height: 100%;
+  width: 100%;
+}
+
+.section2 {
+  /* background-color: red; */
+  padding: 50px 0;
+  margin-top: 88px;
+  display: flex;
+  margin: 88px auto auto;
+}
+.section2 .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.section2 .left img {
+  width: 60%;
+}
+.section2 .right {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.section2 .right h1 {
+  color: #36507b;
+  font-size: 30px;
+}
+.section2 .right p {
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+.section2 .right button {
+  padding: 10px;
+  background: #f36a8d;
+  border: none;
+  width: 140px;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+/* Section 3 */
+
+.section3 {
+  min-height: 60%;
+  background-image: linear-gradient(
+    to left,
+    #f36a8d,
+    #f6738e,
+    #f87c8f,
+    #fa8491,
+    #fc8d93
+  );
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 100px;
+  /* Optional: adds space between the parts */
+}
+.section3 .div1 {
+  color: white;
+  flex-direction: column;
+
+  display: flex;
+  align-items: end;
+
+  justify-content: center;
+  font-size: 2vw;
+}
+.div1-inside {
+  width: 300px;
+}
+.section3 .div2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section3 .div2 div {
+  background-color: white;
+  padding: 20px;
+  height: 300px;
+  margin: 20px;
+  width: 270px;
+}
+.section3 .div2 div img {
+  background-color: #f36a8d;
+  padding: 6px;
+  border-radius: 100%;
+  width: 60px;
+}
+.section3 .div2 div h2 {
+  font-size: 25px;
+  color: #f36a8d;
+  margin: 10px 0;
+}
+.section3 .div2 div p {
+  margin: 10px 0;
+}
+@media screen and (max-width: 1339px) {
+  .section3 {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  body {
+    /* background-color: blue; */
+    /* overflow-x: hidden; */
+  }
+  .section3 {
+    padding: 0 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer .menu {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 934px) {
+  .section3 {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  body {
+    /* background-color: blue; */
+  }
+  .section1 .main button {
+    width: 100px;
+    font-size: 20px;
+  }
+  .section1 .main .left {
+    width: 100%;
+  }
+  .section1 .main h1 {
+    width: 100%;
+  }
+  .section1 .main p {
+    width: 100%;
+  }
+
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .main .right {
+    align-items: end;
+    /* background-color: red; */
+    justify-content: end;
+
+    width: 100%;
+  }
+  .main .right img {
+    width: 100%;
+  }
+}
+footer {
+  height: 100%;
+}
+@media screen and (max-width: 700px) {
+  .section3 {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+  }
+  .section2 .right {
+    padding: 20px;
+  }
+  .section2 {
+    flex-direction: column-reverse;
+    margin: 100px 0;
+  }
+  .main .left button {
+    width: fit-content;
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+  .main .left h1 {
+    font-size: 30px;
+  }
+  .main .left p {
+    font-size: 18px;
+  }
+  .main .left {
+    align-items: start;
+    justify-content: start;
+    font-size: 30px;
+  }
+  footer {
+    height: fit-content;
+  }
+}
